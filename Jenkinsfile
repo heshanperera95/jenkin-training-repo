@@ -2,21 +2,10 @@ pipeline {
     agent any
 
     stages {
-
-
-        stage('Setup') {
+        stage('Hello') {
             steps {
-                sh "pip install -r requirements.txt"
-            
+                echo 'Hello World 22222'
             }
         }
-        stage('Test') {
-            steps {
-                sh "pytest"
-                
-            }
-        }    
-  
-            
     }
 }
